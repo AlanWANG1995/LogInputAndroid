@@ -16,6 +16,7 @@
 
 package com.blackcj.customkeyboard;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
@@ -67,7 +68,6 @@ public class CandidateView extends View {
     /**
      * Construct a CandidateView for showing suggested words for completion.
      * @param context
-     * @param attrs
      */
     public CandidateView(Context context) {
         super(context);
@@ -235,9 +235,10 @@ public class CandidateView extends View {
         scrollTo(sx, getScrollY());
         invalidate();
     }
-    
+
+    @SuppressLint("WrongCall")
     public void setSuggestions(List<String> suggestions, boolean completions,
-            boolean typedWordValid) {
+                               boolean typedWordValid) {
         clear();
         if (suggestions != null) {
             mSuggestions = new ArrayList<String>(suggestions);
@@ -304,6 +305,7 @@ public class CandidateView extends View {
      * gesture.
      * @param x
      */
+    @SuppressLint("WrongCall")
     public void takeSuggestionAt(float x) {
         mTouchX = (int) x;
         // To detect candidate
