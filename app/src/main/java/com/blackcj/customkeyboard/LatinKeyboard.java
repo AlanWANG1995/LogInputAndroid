@@ -24,6 +24,8 @@ import android.inputmethodservice.Keyboard;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 
+import im.lginput.ime_full.R;
+
 public class LatinKeyboard extends Keyboard {
 
     private Key mEnterKey;
@@ -35,7 +37,7 @@ public class LatinKeyboard extends Keyboard {
     private Key mModeChangeKey;
     /**
      * Stores the current state of the language switch key (a.k.a. globe key). This should be
-     * visible while {@link InputMethodManager#shouldOfferSwitchingToNextInputMethod(IBinder)}
+     * visible while
      * returns true. When this key becomes invisible, its width will be shrunk to zero.
      */
     private Key mLanguageSwitchKey;

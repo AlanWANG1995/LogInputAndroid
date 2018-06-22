@@ -30,6 +30,8 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
+import im.lginput.ime_full.R;
+
 public class CandidateView extends View {
 
     private static final int OUT_OF_BOUNDS = -1;

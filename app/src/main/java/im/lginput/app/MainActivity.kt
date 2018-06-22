@@ -1,9 +1,8 @@
 package im.lginput.app
 
 import android.app.Activity
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.blackcj.customkeyboard.R
+import im.lginput.ime_full.R
 
 class MainActivity : Activity() {
 
